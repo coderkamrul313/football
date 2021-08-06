@@ -1,0 +1,444 @@
+/* --------------------------------------------------------------------------------------------
+                                           global style 
+-----------------------------------------------------------------------------------------------*/
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+     
+}
+.container{
+    width:1050px;
+   
+}
+
+/* -------------------------------------------------------------------------------------------------
+                                         hero section
+------------------------------------------------------------------------------------------------- */
+.hero-section{
+    background: #2D25A0;
+   width:100%;
+    
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items:center;
+    align-items: center;
+    min-height:677px;
+}
+.hero-intro{
+ padding-left:160px;
+}
+#intro-title{
+    color:#ffff;
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+.button{
+    background: #E02C6D;
+    padding: 10px 24px;
+    margin-top:20px;
+    color:#fff;
+    text-decoration: none;
+    transition: border-radius 0.7s ;
+}
+.button:hover{
+    border-radius:25px;
+    
+}
+.fa-arrow-right{
+    padding-left: 8px;
+}
+.hero-image img{
+    width:555px;
+    height:438px;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-image img:hover{
+    transform:translateY(-40px) skew(10deg);
+
+}
+
+/* ---------------------------------------------------------------------------------------
+                                            Top Players
+----------------------------------------------------------------------------------------*/
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,474px);
+    column-gap: 30px;
+    row-gap: 27px;
+    margin-top:70px;
+    justify-items: center;
+}
+.player{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    width:300px;
+    
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+    padding:16px 0 10px;
+    font-size:28px;
+}
+.player-description{
+    color: #6C6C6C;
+    line-height: 26px;
+}
+ 
+/* ---------------------------------------------------------------------------------------------
+                                          Highlights section 
+----------------------------------------------------------------------------------------------*/
+.hightlight{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:69px;
+    align-items: center;
+    margin-top: 185px;
+
+}
+
+.highlight-info h1{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight-info p{
+    color: #0A0826;
+    line-height: 28px;
+    padding-bottom: 24px;
+}
+
+.heightlight-img img{
+    width: 567px;
+    height: 427px;
+}
+/* ------------------------------------------------------------------------------
+                                        Latest Tournament News 
+----------------------------------------------------------------------------- */
+.tournament-title{
+    text-align: center;
+    padding:55px 0px;
+    color:#E02C6D;
+   font-size: 38px;
+}
+.turnaments{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 40px;
+    row-gap: 45px;
+    justify-items: center;
+}
+.arab-cup{
+    grid-column:span 3;
+}
+.olympic{
+    grid-column:span 3;
+}
+.beach-cup{
+    grid-column:span 2;
+}
+.fustalcup{
+    grid-column:span 2;
+}
+.leauge{
+    grid-column:span 2;
+}
+.tournament-banner img{
+    width:100%;
+    cursor: pointer;
+}
+.tournament{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:15px;
+}
+.tournament-name{
+    color:#777;
+    font-size: 14px;
+    padding:10px 0px;
+}
+
+.tournament-heading{
+    color:000;
+    cursor: pointer;
+    font-size:20px;
+}
+
+.tournamnet-date{
+    color:#E02C6D;
+    font-size: 14px;
+    padding:12px 0px;
+}
+/* - -------------------------------------------------------------------------
+                                           Latest FIfa News 
+---------------------------------------------------------------------------- */
+
+.fifa-news-title{
+    text-align: center;
+    padding:55px 0px;
+    color:#2f2ce0;
+   font-size:38px;
+
+}
+.fifa-news{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+    align-items: center;
+
+
+}
+
+.news-article{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.news-img img{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+.news-title{
+    font-size: 20px;
+    padding:10px 0px;
+    color:rgb(0, 0, 0);
+
+}
+.news-date{
+    font-size: 13px;
+    color:#777;
+    padding:5px 0px;
+}
+
+/*-----------------------------------------------------------------------------------
+                                                Footer
+ ----------------------------------------------------------------------------------*/
+ .footer-section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding:92px 0px;
+
+}
+.footer-logo img{
+ width:484px;
+ height:110px;
+ padding-bottom: 20px;
+}
+.social-icon .icon{
+    color:gray;
+    padding: 14px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.social-icon .icon:hover{
+    color: #E02C6D;   
+    
+}
+
+#copyright{
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+/* -----------------------------------------------------------------------------------------------------
+                                                Media Quires
+-------------------------------------------------------------------------------------------------------*/
+
+/* -------------------------------------------------------------------
+                                    -Mobile device
+------------------------------------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%;
+    }
+    /* ---------hero section------------- */
+
+
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+       
+    }
+
+    .hero-intro{
+        padding-left:16px;
+       }
+
+    #intro-title{
+        font-size: 34px;
+       margin-bottom: 15px;
+    }
+
+    .hero-image img{
+       width:330px;
+      height:260px;
+      padding-bottom:50px ;
+    }
+
+
+     /* ------top player section ----*/
+
+
+    .top-players{
+        grid-template-columns: repeat(1,1fr);
+    } 
+
+  /* -----------------highlight section----------- */
+
+    .hightlight{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        row-gap: 30px;
+        padding:8px 15px;
+        margin-top:80px;
+    }
+    .highlight-info h1{
+        font-size: 30px;
+        padding:20px 0px;  
+    }
+    .highlight-info p{
+      font-size: 16px;
+     padding-bottom: 20px;
+        
+    }
+    .heightlight-img img{
+        width:100%;
+        height:100%;
+    }
+
+    /*--------------- latest turnament section--- */
+
+    
+    .tournament-title{
+        font-size: 27px;
+        padding:30px 0px;
+    }
+    .turnaments{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .tournament-details{
+        text-align: center;
+    }
+    .tournament-heading{
+     font-size:17px;
+ }
+ /* ---------latest fifa news ---*/
+ .fifa-news{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center; 
+
+}
+.news-title{
+    font-size: 15px;
+}
+
+.news-text{
+    text-align: center;
+}
+     /* ------------------------footer---------------- */
+
+    .social-icon .icon{
+        font-size: 18px;
+    }
+
+    .footer-logo img{
+        width:290px;
+        height:71px;
+     
+       }
+
+       .fifa-news-title{
+         font-size: 27px;
+    
+    } 
+    
+}
+
+
+/* ---------------------------------------------------------------------------------
+                                              Tab device
+--------------------------------------------------------------------------------- */
+@media only screen and (min-width:689px) and (max-width:992px) {
+.container{
+    width:100%;
+
+}
+     /* ---hero responsive ----*/
+
+    .hero-intro{
+        padding-left:30px;
+       }
+
+       #intro-title{
+        font-size:38px;
+    
+    }
+    .hero-image img{
+        padding-right:30px;
+        width:455px;
+        height:438px;
+       
+    }
+   /* -------------top player section--------  */
+   .top-players{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    column-gap: 0px;
+
+}
+
+/*---------------------- highlight section---- */
+
+.hightlight{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    row-gap: 40px;
+    padding:8px 15px;
+    margin-top:80px;
+}
+
+.highlight-info p{
+    font-size: 16px;
+   padding:20px 0px;
+      
+  }
+
+  /*--------- latest turnament news--- */
+  .tournament-title{
+    font-size: 36px;
+    padding:30px 0px;
+}
+ /*------------------ latest fifa news---- */
+ 
+ .fifa-news-title{
+   font-size: 36px;
+
+}
+}
