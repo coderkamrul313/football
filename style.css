@@ -32,7 +32,7 @@ main{
     grid-template-columns: repeat(2,1fr);
     justify-items:center;
     align-items: center;
-    min-height:677px;
+    min-height:660px;
 }
 .hero-intro{
  padding-left:160px;
@@ -214,7 +214,9 @@ main{
     justify-content: center;
 }
 
-
+.news-text{
+    text-align: center;
+}
 .news-img img{
     width:100%;
     height:100%;
@@ -283,6 +285,7 @@ main{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         align-items: center;
+        min-height:500px;
        
     }
 
@@ -298,7 +301,7 @@ main{
     .hero-image img{
        width:330px;
       height:260px;
-      padding-bottom:50px ;
+      
     }
 
 
@@ -385,7 +388,7 @@ main{
 /* ---------------------------------------------------------------------------------
                                               Tab device
 --------------------------------------------------------------------------------- */
-@media only screen and (min-width:689px) and (max-width:992px) {
+@media only screen and (min-width:688px) and (max-width:992px) {
 .container{
     width:100%;
 
